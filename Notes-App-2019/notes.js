@@ -1,9 +1,9 @@
 const fs=require('fs')
 const chalk=require('chalk')
 //getting notes function
-const getNotes=()=>{
-  return ( 'Your notes' )
-}
+// const getNotes=()=>{
+//   return ( 'Your notes' )
+// }
 const readNote=(title)=>{
   const notes=loadNotes();
   const note=notes.find(note=>{
