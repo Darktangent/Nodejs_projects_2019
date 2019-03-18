@@ -1,9 +1,9 @@
 const fs=require('fs')
 const chalk=require('chalk')
 //getting notes function
-// const getNotes=()=>{
-//   return ( 'Your notes' )
-// }
+const getNotes=()=>{
+  return ( 'Your notes' )
+}
 const readNote=(title)=>{
   const notes=loadNotes();
   const note=notes.find(note=>{
@@ -46,6 +46,8 @@ const addNote=(title,body)=>{
   const duplicateNote=notes.find(note=>{
     return note.title===title
   })
+  
+  console.log(duplicateNote)
   if(!duplicateNote){
     // [...notes,title,body]
     notes.push({
